@@ -1,5 +1,5 @@
 import { Container, Divider, Header, Image, List, Segment } from "semantic-ui-react"
-import Danny from '../assets/download.png'
+import FooterImage from '../assets/background/Oscar-drawing-v2-Fixed-cropped.jpg'
 
 const AppFooter = () => {
 
@@ -8,7 +8,7 @@ const AppFooter = () => {
       <Segment inverted style={{ margin: '5em 0em 0em', padding: '3em 0em' }} vertical>
         <Container textAlign='center'>
           <Header as='h2' inverted>
-            <Image circular src={Danny} /> Melanie Nicholas - Animal Portrait Artist
+            <Image circular src={FooterImage} /> Melanie Nicholas - Animal Portrait Artist
           </Header>
           <Divider inverted section />
           <Image src='/vite.svg' centered size='mini' />
