@@ -3,7 +3,7 @@ import { Container, Header } from "semantic-ui-react"
 const Prices = () =>
 (
     <Container text>
-        <Header as='h2'>Prices</Header>
+        <Header as='h2'>Prices and Commissioning</Header>
         <p>
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
             ligula eget dolor. Aenean massa strong. Cum sociis natoque penatibus et

@@ -38,7 +38,7 @@ const AppHeader = () => {
     },
     {
       id: 'about',
-      label: 'About',
+      label: 'About Me',
       icon: 'paint brush',
       route: ABOUT_ROUTE,
     }

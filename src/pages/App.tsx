@@ -1,8 +1,8 @@
 import { Outlet } from 'react-router-dom'
-import AppHeader from './AppHeader'
-import AppFooter from './AppFooter'
+import { Container, Header } from 'semantic-ui-react'
 import './App.css'
-import { Container } from 'semantic-ui-react'
+import AppFooter from './AppFooter'
+import AppHeader from './AppHeader'
 
 const App = () => {
 
@@ -16,6 +16,22 @@ const App = () => {
     <>
       <div className="background-image">
         <AppHeader />
+        <Header size='huge' textAlign='center' inverted style={{
+          fontSize: '4em',
+          fontWeight: 'normal',
+          marginBottom: '0.5em',
+          marginTop: '1em',
+        }}>
+          MELANIE NICHOLAS
+        </Header>
+        <Header size='large' textAlign='center' inverted style={{
+          fontSize: '3em',
+          fontWeight: 'normal',
+          marginBottom: '1em',
+          marginTop: '0.5em',
+        }}>
+          Animal Portrait Artist
+        </Header>
         <Container style={contentStyle}>
           <Outlet />
         </Container>

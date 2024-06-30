@@ -3,7 +3,7 @@ import { Container, Header } from "semantic-ui-react"
 const About = () =>
 (
     <Container text>
-        <Header as='h2'>About</Header>
+        <Header as='h2'>About Me</Header>
         <p>
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
             ligula eget dolor. Aenean massa strong. Cum sociis natoque penatibus et
