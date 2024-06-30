@@ -1,5 +1,5 @@
-import { Container, Divider, Header, Image, List, Segment } from "semantic-ui-react"
-import FooterImage from '../assets/background/Oscar-drawing-v2-Fixed-cropped.jpg'
+import { Container, Divider, Header, Icon, Image, List, Segment } from "semantic-ui-react";
+import FooterImage from '../assets/background/Oscar-drawing-v2-Fixed-cropped.jpg';
 
 const AppFooter = () => {
 
@@ -11,12 +11,13 @@ const AppFooter = () => {
             <Image circular src={FooterImage} /> Melanie Nicholas - Animal Portrait Artist
           </Header>
           <Divider inverted section />
-          <Image src='/vite.svg' centered size='mini' />
-          <List horizontal inverted divided link size='small'>
-            <List.Item as='a' href='#'>
+          <List horizontal inverted divided link size='medium'>
+            <List.Item as='a' target='_blank' rel='noopener noreferrer' href='mailto:melnicholas72%40gmail.com?Subject=Portrait%20Enquiry'>
+              <Icon name='mail' />
               E-Mail
             </List.Item>
-            <List.Item as='a' href='#'>
+            <List.Item as='a' target='_blank' rel='noopener noreferrer' href='https://twitter.com/melnicholas72'>
+              <Icon name='twitter' />
               Twitter
             </List.Item>
           </List>
