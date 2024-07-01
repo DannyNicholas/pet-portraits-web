@@ -58,7 +58,7 @@ const AppHeader = () => {
         borderless
         icon='labeled'
         fixed='top'
-        stackable
+        compact
         style={fixedMenuStyle}
       >
         <Container text>
