@@ -102,7 +102,7 @@ const AppHeader = () => {
         {/* If we are displaying on mobile device resolution, show the smaller dropdown menu */}
         <Media at='mobile'>
           <Container text>
-            <Dropdown text='Menu' icon='picture' button className='icon' floating labeled style={menuStyle}>
+            <Dropdown text='Menu' icon='bars' button className='icon' floating labeled style={menuStyle}>
               <DropdownMenu>
                 {
                   menuItems.map((item, index) =>
