@@ -1,7 +1,7 @@
 import { createMedia } from '@artsy/fresnel'
 import { useState } from 'react'
-import { Link, Location, useLocation } from 'react-router-dom'
-import { Container, Icon, Menu, MenuItem, Segment, SemanticICONS, Sidebar } from 'semantic-ui-react'
+import { Location, useLocation, useNavigate } from 'react-router-dom'
+import { Container, Dropdown, DropdownDivider, DropdownItem, DropdownMenu, Icon, Menu, MenuItem, Segment, SemanticICONS, Sidebar } from 'semantic-ui-react'
 import { ABOUT_ROUTE, CONTACT_ROUTE, GALLERY_ROUTE, HOME_ROUTE, PRICES_ROUTE } from '../constants/Constants'
 
 const AppHeader = () => {
@@ -55,6 +55,7 @@ const AppHeader = () => {
   ]
 
   const location: Location = useLocation()
+  const navigate = useNavigate()
 
   const fixedMenuStyle = {
     backgroundColor: '#fff',
@@ -88,15 +89,17 @@ const AppHeader = () => {
             <Container text>
               {
                 menuItems.map((item, index) =>
-                  <Link to={item.route} key={index}>
-                    <MenuItem
-                      name={item.id}
-                      active={location.pathname === item.route}
-                    >
-                      <Icon name={item.icon} />
-                      {item.label}
-                    </MenuItem>
-                  </Link>
+                  // <Link to={item.route} key={index}>
+                  <MenuItem
+                    key={index}
+                    name={item.id}
+                    active={location.pathname === item.route}
+                    onClick={() => navigate(item.route)}
+                  >
+                    <Icon name={item.icon} />
+                    {item.label}
+                  </MenuItem>
+                  // </Link>
                 )
               }
             </Container>
@@ -121,15 +124,17 @@ const AppHeader = () => {
 
                 {
                   menuItems.map((item, index) =>
-                    <Link to={item.route} key={index}>
-                      <MenuItem
-                        name={item.id}
-                        active={location.pathname === item.route}
-                      >
-                        <Icon name={item.icon} />
-                        {item.label}
-                      </MenuItem>
-                    </Link>
+                    // <Link to={item.route} key={index}>
+                    <MenuItem
+                      key={index}
+                      name={item.id}
+                      active={location.pathname === item.route}
+                      onClick={() => navigate(item.route)}
+                    >
+                      <Icon name={item.icon} />
+                      {item.label}
+                    </MenuItem>
+                    // </Link>
                   )
                 }
               </Container>
@@ -160,6 +165,7 @@ const AppHeader = () => {
                 {/* <HomepageHeading mobile /> */}
               </Segment>
 
+
               {/* {children} */}
             </Sidebar.Pusher>
           </Sidebar.Pushable>
@@ -167,11 +173,47 @@ const AppHeader = () => {
       </MediaContextProvider>
 
 
+
+
       {/*
       The header's menu bar will normally overlay the selected page's content, which hides the top of the page.
       To avoid this we create a fixed height container in our header to push the page content down.
       */}
-      {/* <Container text style={{ height: '100px' }} /> */}
+      <Container text style={{ height: '100px' }} />
+
+      <Dropdown text='File'>
+        <DropdownMenu>
+          <DropdownItem text='New' />
+          <DropdownItem text='Open...' description='ctrl + o' />
+          <DropdownItem text='Save as...' description='ctrl + s' />
+          <DropdownItem text='Rename' description='ctrl + r' />
+          <DropdownItem text='Make a copy' />
+          <DropdownItem icon='folder' text='Move to folder' />
+          <DropdownItem icon='trash' text='Move to trash' />
+          <DropdownDivider />
+          <DropdownItem text='Download As...' />
+          <DropdownItem text='Publish To Web' />
+          <DropdownItem text='E-mail Collaborators' />
+        </DropdownMenu>
+      </Dropdown>
+
+      <Container text>
+        <Dropdown text='Menu' icon='picture' button className='icon' floating labeled>
+          <DropdownMenu>
+            {
+              menuItems.map((item, index) =>
+                // <Link to={item.route} key={index}>
+                <DropdownItem
+                  key={index}
+                  text={item.id}
+                  icon={item.icon}
+                  onClick={() => navigate(item.route)}
+                />
+                // </Link>
+              )}
+          </DropdownMenu>
+        </Dropdown>
+      </Container>
     </>
   )
 }
