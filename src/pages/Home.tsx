@@ -1,4 +1,4 @@
-import { Container, Divider, Grid, GridColumn, Header, Image, Label } from "semantic-ui-react"
+import { Container, Divider, Grid, GridColumn, GridRow, Header, Image, Label } from "semantic-ui-react"
 import Merlin from '../assets/media/Merlin-drawing-fixed.jpg'
 import Mitzy from '../assets/media/Mitzy_Colour_Fixed-cropped.jpg'
 import Tommy from '../assets/media/Tommy-drawing-fixed1.jpg'
@@ -9,51 +9,53 @@ const Home = () => (
         <Divider />
 
         <Grid verticalAlign='middle' stackable >
-            <GridColumn width={8} textAlign='left'>
-                <Image src={Merlin} fluid />
-                <Label>Merlin</Label>
-            </GridColumn>
-            <GridColumn width={8} textAlign='justified'>
-                <p>
-                    Welcome to my website.
-                </p>
-                <p>
-                    I am an animal portrait artist who completed Merlin, my first drawing,
-                    22 years ago.  All my portraits are completed using pencil for a beautifully detailed drawing.
-                </p>
-            </GridColumn>
-        </Grid>
-        <Grid verticalAlign='middle' stackable >
-            <GridColumn width={8} textAlign='justified'>
-                <p>
-                    I love being able to capture the unique character of each animal I draw, from the texture of the fur to the detail of the eyes and nose.
-                </p>
-                <p>
-                    It's very rewarding to be able to make a plain piece of paper come to life.
-                    But the most satisfying aspect of what I do is hearing from my happy customers and knowing I have created something very special for them.
-                </p>
-            </GridColumn>
-            <GridColumn width={8} textAlign='left'>
-                <Image src={Mitzy} fluid />
-                <Label>Mitzy</Label>
-            </GridColumn>
-        </Grid>
-        <Grid verticalAlign='middle' stackable >
-            <GridColumn width={8} textAlign='left'>
-                <Image src={Tommy} fluid />
-                <Label>Tommy</Label>
-            </GridColumn>
-            <GridColumn width={8} textAlign='justified'>
-                <p>
-                    <i>"We gave the portrait to Mollie's owners this week and they were absolutely delighted, with tears in their eyes … so many many many thanks for a great drawing."</i>
-                </p>
-                <p>
-                    <i>"Thank you very much for the portrait of Tommy, it has had lots of admirers."</i>
-                </p>
-                <p>
-                    <i>"We absolutely love the drawing of Soldus. You captured her beautiful brown eyes perfectly."</i>
-                </p>
-            </GridColumn>
+            <GridRow>
+                <GridColumn width={8} textAlign='left'>
+                    <Image src={Merlin} fluid />
+                    <Label>Merlin</Label>
+                </GridColumn>
+                <GridColumn width={8} textAlign='justified'>
+                    <p>
+                        Welcome to my website.
+                    </p>
+                    <p>
+                        I am an animal portrait artist who completed Merlin, my first drawing,
+                        22 years ago.  All my portraits are completed using pencil for a beautifully detailed drawing.
+                    </p>
+                </GridColumn>
+            </GridRow>
+            <GridRow>
+                <GridColumn width={8} textAlign='justified'>
+                    <p>
+                        I love being able to capture the unique character of each animal I draw, from the texture of the fur to the detail of the eyes and nose.
+                    </p>
+                    <p>
+                        It's very rewarding to be able to make a plain piece of paper come to life.
+                        But the most satisfying aspect of what I do is hearing from my happy customers and knowing I have created something very special for them.
+                    </p>
+                </GridColumn>
+                <GridColumn width={8} textAlign='left'>
+                    <Image src={Mitzy} fluid />
+                    <Label>Mitzy</Label>
+                </GridColumn>
+            </GridRow>
+            <GridRow>
+                <GridColumn width={8} textAlign='left'>
+                    <Image src={Tommy} fluid />
+                    <Label>Tommy</Label>
+                </GridColumn>
+                <GridColumn width={8} textAlign='justified'>
+                    <p>
+                        <i>"We gave the portrait to Mollie's owners this week and they were absolutely delighted, with tears in their eyes … so many many many thanks for a great drawing."</i>
+                    </p>
+                    <p>
+                        <i>"Thank you very much for the portrait of Tommy, it has had lots of admirers."</i>
+                    </p>
+                    <p>
+                        <i>"We absolutely love the drawing of Soldus. You captured her beautiful brown eyes perfectly."</i>
+                    </p>
+                </GridColumn>
+            </GridRow>
         </Grid>
     </Container >
 )
