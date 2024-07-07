@@ -1,10 +1,8 @@
 import { Outlet } from "react-router-dom"
 import { Container } from "semantic-ui-react"
-import AppMedia from "./Media"
+import { Media } from "./Media"
 
 const AppPage = () => {
-
-    const { Media } = AppMedia
 
     const desktopStyle = {
         backgroundColor: '#fff',

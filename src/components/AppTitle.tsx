@@ -1,6 +1,6 @@
-import { Container, Header } from "semantic-ui-react";
-import { MediaProps, MediaType } from "../types/Media";
-import AppMedia from "./Media";
+import { Container, Header } from "semantic-ui-react"
+import { MediaProps, MediaType } from "../types/Media"
+import { Media } from "./Media"
 
 const AppTitle = () => {
 
@@ -20,8 +20,6 @@ const AppTitle = () => {
         marginBottom: '1em',
         marginTop: '0.5em',
     }
-
-    const { Media } = AppMedia
 
     const FormattedTitle = ({ media }: MediaProps) => {
         const isMobile: boolean = media === MediaType.Mobile

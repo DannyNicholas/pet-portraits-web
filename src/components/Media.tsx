@@ -8,4 +8,5 @@ const AppMedia = createMedia({
     },
 })
 
-export default AppMedia
+/* eslint react-refresh/only-export-components: "off" */
+export const { Media, MediaContextProvider } = AppMedia

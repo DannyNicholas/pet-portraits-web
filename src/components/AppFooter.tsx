@@ -1,15 +1,15 @@
-import { Container, Divider, Grid, GridColumn, Header, Icon, Image, List, Segment } from "semantic-ui-react";
-import FooterImage from '../assets/background/Oscar-drawing-v2-Fixed-cropped.jpg';
-import { MediaProps, MediaType } from "../types/Media";
-import AppMedia from "./Media";
+import { Container, Divider, Grid, GridColumn, Header, Icon, Image, List, Segment } from "semantic-ui-react"
+import FooterImage from '../assets/background/Oscar-drawing-v2-Fixed-cropped.jpg'
+import { MediaProps, MediaType } from "../types/Media"
+import { Media } from "./Media"
 
 const AppFooter = () => {
 
-  const { Media } = AppMedia
   const desktopStyle = {
     margin: '5em 0em 0em',
     padding: '3em 0em'
   }
+
   const mobileStyle = {
     margin: '2em 0em 0em'
   }
