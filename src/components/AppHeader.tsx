@@ -1,7 +1,7 @@
 import { Location, useLocation, useNavigate } from 'react-router-dom'
 import { Container, Dropdown, DropdownItem, DropdownMenu, Icon, Menu, MenuItem, SemanticICONS } from 'semantic-ui-react'
-import AppMedia from '../components/Media'
 import { ABOUT_ROUTE, CONTACT_ROUTE, GALLERY_ROUTE, HOME_ROUTE, PRICES_ROUTE } from '../constants/Constants'
+import AppMedia from './Media'
 
 const AppHeader = () => {
 

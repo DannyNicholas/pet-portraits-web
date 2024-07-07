@@ -1,7 +1,7 @@
 import { isRouteErrorResponse, useRouteError } from "react-router-dom";
 
-import { Container, Header } from "semantic-ui-react"
-import AppHeader from './AppHeader.tsx'
+import { Container, Header } from "semantic-ui-react";
+import AppHeader from '../components/AppHeader.tsx';
 
 
 const ErrorPage = () => {
