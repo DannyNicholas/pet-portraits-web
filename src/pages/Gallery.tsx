@@ -1,9 +1,10 @@
-import { Container, Header } from "semantic-ui-react"
+import { Container, Divider, Header } from "semantic-ui-react"
 
 const Gallery = () =>
 (
     <Container text>
         <Header as='h2'>Gallery</Header>
+        <Divider />
         <p>
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
             ligula eget dolor. Aenean massa strong. Cum sociis natoque penatibus et
