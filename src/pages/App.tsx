@@ -1,6 +1,8 @@
-import { createMedia } from '@artsy/fresnel'
 import { Outlet } from 'react-router-dom'
-import { Container, Header } from 'semantic-ui-react'
+import { Container } from 'semantic-ui-react'
+import AppMedia from '../components/Media'
+import Title from '../components/Title'
+import { MediaType } from '../types/Media'
 import './App.css'
 import AppFooter from './AppFooter'
 import AppHeader from './AppHeader'
@@ -13,30 +15,7 @@ const App = () => {
     padding: '3em 0em',
   }
 
-  const hugeText = {
-    fontSize: '4em',
-    fontWeight: 'normal',
-    marginBottom: '0.5em',
-    marginTop: '1em',
-  }
-
-  const largeText = {
-    fontSize: '3em',
-    fontWeight: 'normal',
-    marginBottom: '1em',
-    marginTop: '0.5em',
-  }
-
-  const name = 'MELANIE NICHOLAS'
-  const occupation = 'Animal Portrait Artist'
-
-  const { MediaContextProvider, Media } = createMedia({
-    breakpoints: {
-      mobile: 0,
-      tablet: 768,
-      computer: 1024,
-    },
-  })
+  const { MediaContextProvider, Media } = AppMedia
 
   return (
     <>
@@ -44,25 +23,20 @@ const App = () => {
         <MediaContextProvider>
           <AppHeader />
           <Media greaterThan='mobile'>
-            <Header size='huge' textAlign='center' inverted style={hugeText}>
-              {name}
-            </Header>
-            <Header size='large' textAlign='center' inverted style={largeText}>
-              {occupation}
-            </Header>
+            <Title media={MediaType.Desktop} />
           </Media>
           <Media at='mobile'>
-            <Header size='huge' textAlign='center' inverted>
-              {name}
-            </Header>
-            <Header size='large' textAlign='center' inverted>
-              {occupation}
-            </Header>
+            <Title media={MediaType.Mobile} />
           </Media>
           <Container style={contentStyle}>
             <Outlet />
           </Container>
-          <AppFooter />
+          <Media greaterThan='mobile'>
+            <AppFooter media={MediaType.Desktop} />
+          </Media>
+          <Media at='mobile'>
+            <AppFooter media={MediaType.Mobile} />
+          </Media>
         </MediaContextProvider>
       </div>
     </>

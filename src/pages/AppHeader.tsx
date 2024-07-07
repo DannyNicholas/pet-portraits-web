@@ -1,9 +1,11 @@
-import { createMedia } from '@artsy/fresnel'
 import { Location, useLocation, useNavigate } from 'react-router-dom'
 import { Container, Dropdown, DropdownItem, DropdownMenu, Icon, Menu, MenuItem, SemanticICONS } from 'semantic-ui-react'
+import AppMedia from '../components/Media'
 import { ABOUT_ROUTE, CONTACT_ROUTE, GALLERY_ROUTE, HOME_ROUTE, PRICES_ROUTE } from '../constants/Constants'
 
 const AppHeader = () => {
+
+  const { Media } = AppMedia
 
   type MenuItem = {
     readonly id: string,
@@ -11,14 +13,6 @@ const AppHeader = () => {
     readonly icon: SemanticICONS,
     readonly route: string,
   }
-
-  const { MediaContextProvider, Media } = createMedia({
-    breakpoints: {
-      mobile: 0,
-      tablet: 768,
-      computer: 1024,
-    },
-  })
 
   const menuItems: MenuItem[] = [
     {
@@ -64,60 +58,61 @@ const AppHeader = () => {
 
   return (
     <>
-      <MediaContextProvider>
-
-        {/* If we are displaying on a device with a resolution greater than a mobile, show the big menu buttons */}
-        <Media greaterThan='mobile'>
-          <Menu
-            borderless
-            icon='labeled'
-            fixed='top'
-            compact
-            style={menuStyle}
-          >
-            <Container text>
-              {
-                menuItems.map((item, index) =>
-                  <MenuItem
-                    key={index}
-                    name={item.id}
-                    active={location.pathname === item.route}
-                    onClick={() => navigate(item.route)}
-                  >
-                    <Icon name={item.icon} />
-                    {item.label}
-                  </MenuItem>
-                )
-              }
-            </Container>
-          </Menu>
-
-          {/*
+      {/* If we are displaying on a device with a resolution greater than a mobile, show the big menu buttons */}
+      <Media greaterThan='mobile'>
+        <Menu
+          borderless
+          icon='labeled'
+          fixed='top'
+          compact
+          style={menuStyle}
+        >
+          <Container text>
+            {
+              menuItems.map((item, index) =>
+                <MenuItem
+                  key={index}
+                  name={item.id}
+                  active={location.pathname === item.route}
+                  onClick={() => navigate(item.route)}
+                >
+                  <Icon name={item.icon} />
+                  {item.label}
+                </MenuItem>
+              )
+            }
+          </Container>
+        </Menu>
+        {/*
           The header's menu bar will normally overlay the selected page's content, which hides the top of the page.
           To avoid this we create a fixed height container in our header to push the page content down.
           */}
-          <Container text style={{ height: '100px' }} />
-        </Media>
+        <Container text style={{ height: '100px' }} />
+      </Media>
 
-        {/* If we are displaying on mobile device resolution, show the smaller dropdown menu */}
-        <Media at='mobile'>
-          <Container text>
-            <Dropdown text='Menu' icon='bars' button className='icon' floating labeled style={menuStyle}>
-              <DropdownMenu>
-                {
-                  menuItems.map((item, index) =>
-                    <DropdownItem
-                      key={index}
-                      text={item.id}
-                      icon={item.icon}
-                      onClick={() => navigate(item.route)}
-                    />
-                  )}
-              </DropdownMenu>
-            </Dropdown>
-          </Container>
-        </Media>
-      </MediaContextProvider>
+      {/* If we are displaying on mobile device resolution, show the smaller dropdown menu */}
+      <Media at='mobile'>
+        <Container text>
+          <Dropdown text='Menu' icon='bars' button className='icon' floating labeled style={menuStyle}>
+            <DropdownMenu>
+              {
+                menuItems.map((item, index) =>
+                  <DropdownItem
+                    key={index}
+                    text={item.id}
+                    icon={item.icon}
+                    onClick={() => navigate(item.route)}
+                  />
+                )}
+            </DropdownMenu>
+          </Dropdown>
+        </Container>
+        {/*
+          The mobile menu bar will normally overlay the selected page's content, which hides the top of the page.
+          To avoid this we create a small fixed height container in our header to push the page content down.
+          */}
+        <Container text style={{ height: '10px' }} />
+      </Media>
     </>
   )
 }
