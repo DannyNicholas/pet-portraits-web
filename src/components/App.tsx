@@ -9,10 +9,13 @@ const App = () => (
   <>
     <div className="background-image">
       <MediaContextProvider>
-        <AppHeader />
-        <AppTitle />
-        <AppPage />
-        <AppFooter />
+        <div className="content">
+          <AppHeader />
+          <AppTitle />
+          <AppPage />
+          <AppFooter />
+          <div className="box1"></div>
+        </div>
       </MediaContextProvider>
     </div>
   </>

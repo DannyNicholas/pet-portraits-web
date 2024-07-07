@@ -3,3 +3,22 @@
     background-size: cover !important;
     background-position: center center;
 }
+
+/*  this css add a filled box if the content is too small for the screen
+but the background image doesn't fill the entire page! */
+html,
+body {
+    height: 100%;
+}
+
+.content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.box1 {
+    background: #1b1c1d;
+    flex: 1;
+}
