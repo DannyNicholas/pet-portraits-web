@@ -87,7 +87,7 @@ const AppHeader = () => {
           The header's menu bar will normally overlay the selected page's content, which hides the top of the page.
           To avoid this we create a fixed height container in our header to push the page content down.
           */}
-        <Container text style={{ height: '100px' }} />
+        <Container text style={{ height: '80px' }} />
       </Media>
 
       {/* If we are displaying on mobile device resolution, show the smaller dropdown menu */}

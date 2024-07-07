@@ -1,42 +1,22 @@
-import { Outlet } from 'react-router-dom'
-import { Container } from 'semantic-ui-react'
-import { MediaType } from '../types/Media'
 import './App.css'
 import AppFooter from './AppFooter'
 import AppHeader from './AppHeader'
+import AppPage from './AppPage'
+import AppTitle from './AppTitle'
 import AppMedia from './Media'
-import Title from './Title'
 
 const App = () => {
 
-  const contentStyle = {
-    backgroundColor: '#fff',
-    margin: '3em 0em 0em',
-    padding: '3em 0em',
-  }
-
-  const { MediaContextProvider, Media } = AppMedia
+  const { MediaContextProvider } = AppMedia
 
   return (
     <>
       <div className="background-image">
         <MediaContextProvider>
           <AppHeader />
-          <Media greaterThan='mobile'>
-            <Title media={MediaType.Desktop} />
-          </Media>
-          <Media at='mobile'>
-            <Title media={MediaType.Mobile} />
-          </Media>
-          <Container style={contentStyle}>
-            <Outlet />
-          </Container>
-          <Media greaterThan='mobile'>
-            <AppFooter media={MediaType.Desktop} />
-          </Media>
-          <Media at='mobile'>
-            <AppFooter media={MediaType.Mobile} />
-          </Media>
+          <AppTitle />
+          <AppPage />
+          <AppFooter />
         </MediaContextProvider>
       </div>
     </>
