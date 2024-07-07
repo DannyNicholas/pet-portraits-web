@@ -25,7 +25,7 @@ const AppTitle = () => {
         const isMobile: boolean = media === MediaType.Mobile
         return (
             <>
-                <Container text >
+                <Container text style={isMobile ? { padding: '20px' } : {}}>
                     <Header size='huge' textAlign='center' inverted style={isMobile ? {} : hugeText}>
                         {name}
                     </Header>
