@@ -14,7 +14,7 @@ const Home = () => (
                     <Image src={Merlin} fluid />
                     <Label>Merlin</Label>
                 </GridColumn>
-                <GridColumn width={8} textAlign='justified'>
+                <GridColumn width={8}>
                     <p>
                         Welcome to my website.
                     </p>
@@ -25,7 +25,7 @@ const Home = () => (
                 </GridColumn>
             </GridRow>
             <GridRow>
-                <GridColumn width={8} textAlign='justified'>
+                <GridColumn width={8}>
                     <p>
                         I love being able to capture the unique character of each animal I draw, from the texture of the fur to the detail of the eyes and nose.
                     </p>
@@ -44,7 +44,7 @@ const Home = () => (
                     <Image src={Tommy} fluid />
                     <Label>Tommy</Label>
                 </GridColumn>
-                <GridColumn width={8} textAlign='justified'>
+                <GridColumn width={8}>
                     <p>
                         <i>"We gave the portrait to Mollie's owners this week and they were absolutely delighted, with tears in their eyes … so many many many thanks for a great drawing."</i>
                     </p>
