@@ -13,6 +13,7 @@ const Gallery = () => {
 
     const captionsRef = useRef(null)
     const slideshowRef = useRef(null)
+    const [index, setIndex] = useState(-1)
 
     const photos = [
         {
@@ -39,37 +40,26 @@ const Gallery = () => {
         },
     ];
 
-
-    const [index, setIndex] = useState(-1);
-
-
-
-
     return (
         <Container text>
             <Header as='h2'>Gallery</Header>
             <Divider />
-
             <p>
                 Please click on a picture to see the drawing in more detail and the photos I worked from.
             </p>
-
             <PhotoAlbum layout="rows"
                 photos={photos}
                 targetRowHeight={150}
                 onClick={({ index: current }) => setIndex(current)} />
-
             <Lightbox
                 index={index}
                 slides={photos}
                 open={index >= 0}
                 close={() => setIndex(-1)}
-
                 plugins={[Captions, Slideshow]}
                 captions={{ ref: captionsRef }}
                 slideshow={{ ref: slideshowRef }}
             />
-
         </Container>
     )
 }
