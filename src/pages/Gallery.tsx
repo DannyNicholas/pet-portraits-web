@@ -21,7 +21,6 @@ const Gallery = () => {
             width: 4083,
             height: 3045,
             title: "Merlin",
-            description: "Slide description",
             srcSet: [
                 { src: Merlin, width: 320, height: 213 },
                 { src: Merlin, width: 4083, height: 3045 },
@@ -32,7 +31,6 @@ const Gallery = () => {
             width: 3633,
             height: 3548,
             title: "Mitzy",
-            description: "Slide description",
             srcSet: [
                 { src: Mitzy, width: 320, height: 320 },
                 { src: Mitzy, width: 3633, height: 3548 },
@@ -45,7 +43,7 @@ const Gallery = () => {
             <Header as='h2'>Gallery</Header>
             <Divider />
             <p>
-                Please click on a picture to see the drawing in more detail and the photos I worked from.
+                Please click on a picture to see the drawing in more detail.
             </p>
             <PhotoAlbum layout="rows"
                 photos={photos}
