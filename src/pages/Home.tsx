@@ -45,6 +45,7 @@ const Home = () => (
                     <Label>Tommy</Label>
                 </GridColumn>
                 <GridColumn width={8}>
+                    <Header as='h3'>Customer Reviews</Header>
                     <p>
                         <i>"We gave the portrait to Mollie's owners this week and they were absolutely delighted, with tears in their eyes … so many many many thanks for a great drawing."</i>
                     </p>

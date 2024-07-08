@@ -14,6 +14,11 @@ const AppTitle = () => {
         marginTop: '1em',
     }
 
+    const hugeTextMobile = {
+        marginBottom: '0em',
+        marginTop: '0.5em',
+    }
+
     const largeText = {
         fontSize: '3em',
         fontWeight: 'normal',
@@ -21,15 +26,20 @@ const AppTitle = () => {
         marginTop: '0.5em',
     }
 
+    const largeTextMobile = {
+        marginBottom: '1em',
+        marginTop: '0em',
+    }
+
     const FormattedTitle = ({ media }: MediaProps) => {
         const isMobile: boolean = media === MediaType.Mobile
         return (
             <>
-                <Container text style={isMobile ? { padding: '20px' } : {}}>
-                    <Header size='huge' textAlign='center' inverted style={isMobile ? {} : hugeText}>
+                <Container text >
+                    <Header size='huge' textAlign='center' inverted style={isMobile ? hugeTextMobile : hugeText}>
                         {name}
                     </Header>
-                    <Header size='large' textAlign='center' inverted style={isMobile ? {} : largeText}>
+                    <Header size='large' textAlign='center' inverted style={isMobile ? largeTextMobile : largeText}>
                         {occupation}
                     </Header>
                 </Container>
