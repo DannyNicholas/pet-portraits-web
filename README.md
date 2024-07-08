@@ -33,3 +33,6 @@ export default {
 Follow: https://blog.logrocket.com/build-react-typescript-app-vite/
 
 https://react.semantic-ui.com/
+
+Gallery: https://www.npmjs.com/package/react-photo-album
+Photo Lightbox: https://yet-another-react-lightbox.com/
