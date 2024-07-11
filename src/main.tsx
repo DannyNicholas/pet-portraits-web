@@ -7,7 +7,7 @@ import { ABOUT_ROUTE, CONTACT_ROUTE, EXAMPLES_ROUTE, GALLERY_ROUTE, HOME_ROUTE, 
 import About from './pages/About.tsx'
 import Contact from './pages/Contact.tsx'
 import ErrorPage from './pages/ErrorPage.tsx'
-import Examples from './pages/Examples.tsx'
+import Example from './pages/Example.tsx'
 import Gallery from './pages/Gallery.tsx'
 import Home from './pages/Home.tsx'
 import Prices from './pages/Prices.tsx'
@@ -39,7 +39,7 @@ const router = createBrowserRouter([
       },
       {
         path: EXAMPLES_ROUTE,
-        element: <Examples />,
+        element: <Example />,
       },
     ],
   }
