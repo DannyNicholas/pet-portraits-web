@@ -1,9 +1,15 @@
+import { useLayoutEffect } from "react"
 import { Link, useParams } from "react-router-dom"
 import { Container, Divider, Grid, GridColumn, GridRow, Header, Image, Label } from "semantic-ui-react"
 import { Examples } from "../config/Examples"
 import { ContentType, ExampleContent, ImageContent, TextContent } from "../types/Example"
 
 const Example = () => {
+
+    // ensure we scroll to top of page when opening a new example page
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0)
+    })
 
     const { id } = useParams()
 
@@ -30,7 +36,7 @@ const Example = () => {
             <GridRow>
                 <GridColumn width={16} textAlign='left'>
                     <p>
-                        {text.text}
+                        {text.quote ? <i>{text.text}</i> : text.text}
                     </p>
                 </GridColumn>
             </GridRow>

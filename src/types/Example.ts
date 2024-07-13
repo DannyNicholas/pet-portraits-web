@@ -16,5 +16,6 @@ export type ImageContent = {
 
 export type TextContent = {
     readonly type: ContentType.Text,
+    readonly quote?: boolean,
     readonly text: string,
 }

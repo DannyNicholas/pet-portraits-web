@@ -1,6 +1,6 @@
 import { Photo } from 'react-photo-album';
-import Mitzy from '../assets/media/Mitzy_Colour_Fixed-cropped.jpg';
 import Merlin from "../assets/pets/merlin/merlin.jpg";
+import Mitzy from "../assets/pets/mitzy/mitzy.jpg";
 
 // holds photos for the gallery
 export const Photos: Photo[] = [

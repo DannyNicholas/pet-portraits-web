@@ -1,8 +1,8 @@
-import { Link } from "react-router-dom";
-import { Container, Divider, Grid, GridColumn, GridRow, Header, Image, Label } from "semantic-ui-react";
-import Mitzy from '../assets/media/Mitzy_Colour_Fixed-cropped.jpg';
-import Tommy from '../assets/media/Tommy-drawing-fixed1.jpg';
-import Merlin from "../assets/pets/merlin/merlin.jpg";
+import { Link } from "react-router-dom"
+import { Container, Divider, Grid, GridColumn, GridRow, Header, Image, Label } from "semantic-ui-react"
+import Merlin from "../assets/pets/merlin/merlin.jpg"
+import Mitzy from "../assets/pets/mitzy/mitzy.jpg"
+import Tommy from "../assets/pets/tommy/tommy.jpg"
 
 const Home = () => (
     <Container text >
