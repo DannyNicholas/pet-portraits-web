@@ -245,6 +245,12 @@ export const Examples: ExampleContent[] = [
         header: 'Mustard',
         structure: [
             {
+                type: ContentType.Text,
+                quote: true,
+                text: '"Thank you for the super drawing of Mustard, the detail is amazing and really reflects his personality.\
+                It hangs in pride of place on our stairs so everyone gets a great view! With kindest regards."',
+            },
+            {
                 type: ContentType.Image,
                 image: Mustard,
                 caption: 'Mustard'
