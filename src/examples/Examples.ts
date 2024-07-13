@@ -1,7 +1,7 @@
-import { ContentType, ExampleContent } from "../../types/Example"
-import Merlin from "../media/Merlin-drawing-fixed.jpg"
-import Mitzy from "../media/MitzyBIG.jpg"
-import MitzyPhoto from "../media/Mitzy_Colour_Fixed-cropped.jpg"
+import Merlin from "../assets/media/Merlin-drawing-fixed.jpg"
+import Mitzy from "../assets/media/MitzyBIG.jpg"
+import MitzyPhoto from "../assets/media/Mitzy_Colour_Fixed-cropped.jpg"
+import { ContentType, ExampleContent } from "../types/Example"
 
 export const Examples: ExampleContent[] = [
     {
