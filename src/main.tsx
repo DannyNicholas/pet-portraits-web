@@ -3,11 +3,12 @@ import ReactDOM from 'react-dom/client'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import 'semantic-ui-css/semantic.min.css'
 import App from './components/App.tsx'
-import { ABOUT_ROUTE, CONTACT_ROUTE, EXAMPLES_ROUTE, GALLERY_ROUTE, HOME_ROUTE, PRICES_ROUTE } from './constants/Constants.ts'
+import { ABOUT_ROUTE, CONTACT_ROUTE, EXAMPLES_ROUTE, EXAMPLES_SUMMARY, GALLERY_ROUTE, HOME_ROUTE, PRICES_ROUTE } from './constants/Constants.ts'
 import About from './pages/About.tsx'
 import Contact from './pages/Contact.tsx'
 import ErrorPage from './pages/ErrorPage.tsx'
 import Example from './pages/Example.tsx'
+import ExampleSummary from './pages/ExampleSummary.tsx'
 import Gallery from './pages/Gallery.tsx'
 import Home from './pages/Home.tsx'
 import Prices from './pages/Prices.tsx'
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
       {
         path: EXAMPLES_ROUTE,
         element: <Example />,
+      },
+      {
+        path: EXAMPLES_SUMMARY,
+        element: <ExampleSummary />,
       },
     ],
   }

@@ -10,6 +10,8 @@ const About = () =>
             I live in the beautiful Wiltshire town of Bradford on Avon with my husband,
             two children and one-eyed cat <Link to={'/examples/george'}>George</Link>, who features in my gallery of portraits.
             As well as drawing I love sewing and creating lovely things for my home.
+        </p>
+        <p>
             I'm never happier than when I am transforming a blank page of paper
             or a piece of fabric into something beautiful and unique.
             I enjoy country walks and bike rides with my family, spending time with friends,

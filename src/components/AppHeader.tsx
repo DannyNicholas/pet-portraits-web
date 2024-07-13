@@ -1,49 +1,9 @@
 import { Location, useLocation, useNavigate } from 'react-router-dom'
-import { Container, Dropdown, DropdownItem, DropdownMenu, Icon, Menu, MenuItem, SemanticICONS } from 'semantic-ui-react'
-import { ABOUT_ROUTE, CONTACT_ROUTE, GALLERY_ROUTE, HOME_ROUTE, PRICES_ROUTE } from '../constants/Constants'
+import { Container, Dropdown, DropdownItem, DropdownMenu, Icon, Menu, MenuItem } from 'semantic-ui-react'
+import { MenuOptions } from '../config/Menu'
 import { Media } from './Media'
 
 const AppHeader = () => {
-
-  type MenuItem = {
-    readonly id: string,
-    readonly label: string,
-    readonly icon: SemanticICONS,
-    readonly route: string,
-  }
-
-  const menuItems: MenuItem[] = [
-    {
-      id: 'home',
-      label: 'Home',
-      icon: 'home',
-      route: HOME_ROUTE,
-    },
-    {
-      id: 'gallery',
-      label: 'Gallery',
-      icon: 'picture',
-      route: GALLERY_ROUTE,
-    },
-    {
-      id: 'price',
-      label: 'Prices',
-      icon: 'pound',
-      route: PRICES_ROUTE,
-    },
-    {
-      id: 'contact',
-      label: 'Contact Me',
-      icon: 'mail',
-      route: CONTACT_ROUTE,
-    },
-    {
-      id: 'about',
-      label: 'About Me',
-      icon: 'paint brush',
-      route: ABOUT_ROUTE,
-    }
-  ]
 
   const location: Location = useLocation()
   const navigate = useNavigate()
@@ -67,7 +27,7 @@ const AppHeader = () => {
         >
           <Container text>
             {
-              menuItems.map((item, index) =>
+              MenuOptions.map((item, index) =>
                 <MenuItem
                   key={index}
                   name={item.id}
@@ -94,7 +54,7 @@ const AppHeader = () => {
           <Dropdown text='Menu' icon='bars' fluid button className='icon' floating labeled style={menuStyle}>
             <DropdownMenu>
               {
-                menuItems.map((item, index) =>
+                MenuOptions.map((item, index) =>
                   <DropdownItem
                     key={index}
                     text={item.id}
