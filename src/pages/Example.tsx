@@ -59,11 +59,13 @@ const Example = () => {
                 <Header as='h2'>Other Examples</Header>
                 <Divider />
                 <p>Click below to see other examples of my work</p>
-                {Examples.map(
-                    (item, index) => (
-                        <li key={index}><Link to={`/examples/${item.id}`}>{item.header}</Link></li>
-                    )
-                )}
+                {Examples
+                    .sort((a, b) => a.header.localeCompare(b.header))
+                    .map(
+                        (item, index) => (
+                            <li key={index}><Link to={`/examples/${item.id}`}>{item.header}</Link></li>
+                        )
+                    )}
             </Container>
         </>
     )
