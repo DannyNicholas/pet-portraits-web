@@ -1,8 +1,10 @@
-import Merlin from "../assets/media/Merlin-drawing-fixed.jpg"
 import Mitzy from "../assets/media/MitzyBIG.jpg"
 import MitzyPhoto from "../assets/media/Mitzy_Colour_Fixed-cropped.jpg"
+import MerlinPhoto from "../assets/pets/merlin/merlin-photo.jpg"
+import Merlin from "../assets/pets/merlin/merlin.jpg"
 import { ContentType, ExampleContent } from "../types/Example"
 
+// holds content for each example page
 export const Examples: ExampleContent[] = [
     {
         id: 'merlin',
@@ -19,7 +21,47 @@ export const Examples: ExampleContent[] = [
             },
             {
                 type: ContentType.Image,
+                image: MerlinPhoto,
+                caption: 'Merlin - Original Photo'
+            },
+        ]
+    },
+    {
+        id: 'mollie',
+        header: 'Mollie',
+        structure: [
+            {
+                type: ContentType.Text,
+                text: 'My first portrait - a 21st birthday present for my husband.',
+            },
+            {
+                type: ContentType.Image,
                 image: Merlin,
+                caption: 'Merlin'
+            },
+            {
+                type: ContentType.Image,
+                image: MerlinPhoto,
+                caption: 'Merlin - Original Photo'
+            },
+        ]
+    },
+    {
+        id: 'maud',
+        header: 'Maud',
+        structure: [
+            {
+                type: ContentType.Text,
+                text: 'My first portrait - a 21st birthday present for my husband.',
+            },
+            {
+                type: ContentType.Image,
+                image: Merlin,
+                caption: 'Merlin'
+            },
+            {
+                type: ContentType.Image,
+                image: MerlinPhoto,
                 caption: 'Merlin - Original Photo'
             },
         ]

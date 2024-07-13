@@ -1,7 +1,8 @@
-import { Container, Divider, Grid, GridColumn, GridRow, Header, Image, Label } from "semantic-ui-react"
-import Merlin from '../assets/media/Merlin-drawing-fixed.jpg'
-import Mitzy from '../assets/media/Mitzy_Colour_Fixed-cropped.jpg'
-import Tommy from '../assets/media/Tommy-drawing-fixed1.jpg'
+import { Link } from "react-router-dom";
+import { Container, Divider, Grid, GridColumn, GridRow, Header, Image, Label } from "semantic-ui-react";
+import Mitzy from '../assets/media/Mitzy_Colour_Fixed-cropped.jpg';
+import Tommy from '../assets/media/Tommy-drawing-fixed1.jpg';
+import Merlin from "../assets/pets/merlin/merlin.jpg";
 
 const Home = () => (
     <Container text >
@@ -19,7 +20,7 @@ const Home = () => (
                         Welcome to my website.
                     </p>
                     <p>
-                        I am an animal portrait artist who completed Merlin, my first drawing,
+                        I am an animal portrait artist who completed Merlin, my <Link to={'/examples/merlin'}>first drawing</Link>,
                         22 years ago.  All my portraits are completed using pencil for a beautifully detailed drawing.
                     </p>
                 </GridColumn>

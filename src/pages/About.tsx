@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { Container, Divider, Header } from "semantic-ui-react"
 
 const About = () =>
@@ -7,7 +8,7 @@ const About = () =>
         <Divider />
         <p>
             I live in the beautiful Wiltshire town of Bradford on Avon with my husband,
-            two children and one-eyed cat George, who features in my gallery of portraits.
+            two children and one-eyed cat <Link to={'/examples/george'}>George</Link>, who features in my gallery of portraits.
             As well as drawing I love sewing and creating lovely things for my home.
             I'm never happier than when I am transforming a blank page of paper
             or a piece of fabric into something beautiful and unique.

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { Container, Divider, Header, Table, TableBody, TableCell, TableHeader, TableHeaderCell, TableRow } from "semantic-ui-react"
 
 const Prices = () => {
@@ -44,7 +45,8 @@ const Prices = () => {
                 I work from photos of your beloved pet, so the photo is key to the quality of the drawing.
                 The better the photo, the better the portrait will be.
                 Ideally I work from one photo but I can use a selection of photos if you do not have one clear one.
-                See Mollie and Maud as examples of where I have used more than one photo to complete a drawing.
+                See <Link to={'/examples/mollie'}>Mollie</Link> and <Link to={'/examples/maud'}>Maud</Link> as
+                examples of where I have used more than one photo to complete a drawing.
             </p>
             <Header as='h3'>How to take the best photograph</Header>
             <ul>
@@ -73,7 +75,7 @@ const Prices = () => {
                 in your initial contact with me.
                 It is always best to give me as much notice as possible,
                 particularly in the run up to Christmas.
-                Please contact me if you have any questions.
+                Please <a target='_blank' rel='noopener noreferrer' href='mailto:melnicholas72%40gmail.com?Subject=Portrait%20Enquiry'>contact me</a> if you have any questions.
             </p>
             <Header as='h3'>Prices</Header>
             <p>
