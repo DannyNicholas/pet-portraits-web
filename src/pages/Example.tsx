@@ -63,7 +63,9 @@ const Example = () => {
                     .sort((a, b) => a.header.localeCompare(b.header))
                     .map(
                         (item, index) => (
-                            <li key={index}><Link to={`/examples/${item.id}`}>{item.header}</Link></li>
+                            <li key={index}>
+                                <Link to={`/examples/${item.id}`}>{item.header}</Link>
+                            </li>
                         )
                     )}
             </Container>
