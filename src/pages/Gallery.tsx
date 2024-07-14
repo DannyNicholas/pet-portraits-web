@@ -25,7 +25,8 @@ const Gallery = () => {
             <PhotoAlbum layout="rows"
                 photos={Photos}
                 targetRowHeight={150}
-                onClick={({ index: current }) => setIndex(current)} />
+                onClick={({ index: current }) => setIndex(current)}
+            />
             <Lightbox
                 index={index}
                 slides={Photos}
