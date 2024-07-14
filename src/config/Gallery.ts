@@ -6,7 +6,9 @@ import George from "../assets/pets/george/george.jpg";
 import Jazz from "../assets/pets/jazz/jazz.jpg";
 import Legend from "../assets/pets/legend/legend.jpg";
 import Maud from "../assets/pets/maud/maud.jpg";
-import MerlinThumb from "../assets/pets/merlin/merlin-thumb.jpg";
+import MerlinOrig from "../assets/pets/merlin/merlin - original.jpg";
+import Merlin256 from "../assets/pets/merlin/merlin-256.jpg";
+import Merlin512 from "../assets/pets/merlin/merlin-512.jpg";
 import Merlin from "../assets/pets/merlin/merlin.jpg";
 import Mitzy from "../assets/pets/mitzy/mitzy.jpg";
 import Mollie from "../assets/pets/mollie/mollie.jpg";
@@ -51,23 +53,25 @@ export const Photos: Photo[] = [
         ]
     },
     {
-        src: MerlinThumb,
-        width: 212,
-        height: 150,
+        src: Merlin,
+        width: 3423,
+        height: 2419,
         title: "Merlin",
         srcSet: [
-            { src: Merlin, width: 4083, height: 3045 },
-            { src: MerlinThumb, width: 212, height: 150 },
+            { src: Merlin256, width: 256, height: 181 },
+            { src: Merlin512, width: 512, height: 362 },
+            { src: Merlin, width: 1280, height: 905 },
+            { src: MerlinOrig, width: 3423, height: 2419 },
         ]
     },
     {
-        src: BertieThumb,
-        width: 150,
-        height: 150,
+        src: Bertie,
+        width: 5428,
+        height: 4046,
         title: "Bertie",
         srcSet: [
-            { src: Bertie, width: 5428, height: 4046 },
             { src: BertieThumb, width: 150, height: 150 },
+            { src: Bertie, width: 5428, height: 4046 },
         ]
     },
     {
