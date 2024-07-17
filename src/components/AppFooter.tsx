@@ -1,5 +1,5 @@
 import { Container, Divider, Grid, GridColumn, Header, Icon, Image, List, Segment } from "semantic-ui-react"
-import FooterImage from '../assets/background/Oscar-drawing-v2-Fixed-cropped.jpg'
+import FooterImage from '../assets/icon/dog-icon.jpg'
 import { MediaProps, MediaType } from "../types/Media"
 import { Media } from "./Media"
 
