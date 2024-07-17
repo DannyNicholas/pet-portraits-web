@@ -5,14 +5,17 @@ import Lightbox from "yet-another-react-lightbox";
 import Captions from "yet-another-react-lightbox/plugins/captions";
 import "yet-another-react-lightbox/plugins/captions.css";
 import Slideshow from "yet-another-react-lightbox/plugins/slideshow";
+import "yet-another-react-lightbox/plugins/thumbnails.css";
 import "yet-another-react-lightbox/styles.css";
 
+import { Thumbnails } from "yet-another-react-lightbox/plugins";
 import { Photos } from "../config/Gallery";
 
 const Gallery = () => {
 
     const captionsRef = useRef(null)
     const slideshowRef = useRef(null)
+    const thumbnailsRef = useRef(null)
     const [index, setIndex] = useState(-1)
 
     return (
@@ -24,14 +27,15 @@ const Gallery = () => {
             </p>
             <PhotoAlbum layout="rows"
                 photos={Photos}
-                targetRowHeight={150}
-                onClick={({ index: current }) => setIndex(current)} />
+                onClick={({ index: current }) => setIndex(current)}
+            />
             <Lightbox
                 index={index}
                 slides={Photos}
                 open={index >= 0}
                 close={() => setIndex(-1)}
-                plugins={[Captions, Slideshow]}
+                plugins={[Captions, Slideshow, Thumbnails]}
+                thumbnails={{ ref: thumbnailsRef }}
                 captions={{ ref: captionsRef }}
                 slideshow={{ ref: slideshowRef }}
             />
