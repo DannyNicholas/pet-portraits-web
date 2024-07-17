@@ -36,10 +36,10 @@ const AppTitle = () => {
         return (
             <>
                 <Container text >
-                    <Header size='huge' textAlign='center' inverted style={isMobile ? hugeTextMobile : hugeText}>
+                    <Header className='text-outline' size='huge' textAlign='center' inverted style={isMobile ? hugeTextMobile : hugeText}>
                         {name}
                     </Header>
-                    <Header size='large' textAlign='center' inverted style={isMobile ? largeTextMobile : largeText}>
+                    <Header className='text-outline' size='large' textAlign='center' inverted style={isMobile ? largeTextMobile : largeText}>
                         {occupation}
                     </Header>
                 </Container>
