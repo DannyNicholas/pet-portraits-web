@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom"
-import { Container, Divider, Header } from "semantic-ui-react"
+import { Container, Divider, Grid, Header } from "semantic-ui-react"
+import ExampleLink from "../components/ExampleLink"
 import { Examples } from "../config/Examples"
 
 const ExampleSummary = () => (
@@ -14,16 +14,16 @@ const ExampleSummary = () => (
             <p>
                 Click on each pet to see the portraits and the original photos.
             </p>
-            {Examples
-                .sort((a, b) => a.header.localeCompare(b.header))
-                .map(
-                    (item, index) => (
-                        <li key={index}>
-                            <Link to={`/examples/${item.id}`}>{item.header}</Link>
-                        </li>
-                    )
-                )}
-        </Container>
+            <Grid stackable>
+                {Examples
+                    .sort((a, b) => a.header.localeCompare(b.header))
+                    .map(
+                        (item, index) => (
+                            <ExampleLink {...item} key={index} />
+                        )
+                    )}
+            </Grid >
+        </Container >
     </>
 )
 
