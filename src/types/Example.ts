@@ -5,6 +5,7 @@ export const enum ContentType {
 export type ExampleContent = {
     readonly id: string,
     readonly header: string,
+    readonly icon: string,
     readonly structure: (ImageContent | TextContent)[],
 }
 

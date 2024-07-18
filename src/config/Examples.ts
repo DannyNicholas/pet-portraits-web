@@ -1,36 +1,51 @@
 import Bertie from "../assets/pets/bertie/bertie-1024.jpg"
+import BertieIcon from "../assets/pets/bertie/bertie-icon.jpg"
 import BertiePhoto from "../assets/pets/bertie/bertie-photo.jpg"
 import Fili from "../assets/pets/fili/fili-1024.jpg"
+import FiliIcon from "../assets/pets/fili/fili-icon.jpg"
 import FiliPhoto from "../assets/pets/fili/fili-photo.jpg"
 import George from "../assets/pets/george/george-1024.jpg"
+import GeorgeIcon from "../assets/pets/george/george-icon.jpg"
 import GeorgePhoto1 from "../assets/pets/george/george-photo-1.jpg"
 import GeorgePhoto2 from "../assets/pets/george/george-photo-2.jpg"
 import Jazz from "../assets/pets/jazz/jazz-1024.jpg"
+import JazzIcon from "../assets/pets/jazz/jazz-icon.jpg"
 import JazzPhoto from "../assets/pets/jazz/jazz-photo.jpg"
 import Legend from "../assets/pets/legend/legend-1024.jpg"
+import LegendIcon from "../assets/pets/legend/legend-icon.jpg"
 import LegendPhoto from "../assets/pets/legend/legend-photo.jpg"
 import Maud from "../assets/pets/maud/maud-1024.jpg"
+import MaudIcon from "../assets/pets/maud/maud-icon.jpg"
 import MaudPhoto1 from "../assets/pets/maud/maud-photo-1.jpg"
 import MaudPhoto2 from "../assets/pets/maud/maud-photo-2.jpg"
 import MaudPhoto3 from "../assets/pets/maud/maud-photo-3.jpg"
 import Merlin from "../assets/pets/merlin/merlin-1024.jpg"
+import MerlinIcon from "../assets/pets/merlin/merlin-icon.jpg"
 import MerlinPhoto from "../assets/pets/merlin/merlin-photo.jpg"
 import Mitzy from "../assets/pets/mitzy/mitzy-1024.jpg"
+import MitzyIcon from "../assets/pets/mitzy/mitzy-icon.jpg"
 import MitzyPhoto from "../assets/pets/mitzy/mitzy-photo.jpg"
 import Mollie from "../assets/pets/mollie/mollie-1024.jpg"
+import MollieIcon from "../assets/pets/mollie/mollie-icon.jpg"
 import MolliePhoto1 from "../assets/pets/mollie/mollie-photo-1.jpg"
 import MolliePhoto2 from "../assets/pets/mollie/mollie-photo-2.jpg"
 import MolliePhoto3 from "../assets/pets/mollie/mollie-photo-3.jpg"
 import Mustard from "../assets/pets/mustard/mustard-1024.jpg"
+import MustardIcon from "../assets/pets/mustard/mustard-icon.jpg"
 import MustardPhoto from "../assets/pets/mustard/mustard-photo.jpg"
 import Oscar from "../assets/pets/oscar/oscar-1024.jpg"
+import OscarIcon from "../assets/pets/oscar/oscar-icon.jpg"
 import OscarPhoto from "../assets/pets/oscar/oscar-photo.jpg"
 import Saffy from "../assets/pets/saffy/saffy-1024.jpg"
+import SaffyIcon from "../assets/pets/saffy/saffy-icon.jpg"
 import Soldus from "../assets/pets/soldus/soldus-1024.jpg"
+import SoldusIcon from "../assets/pets/soldus/soldus-icon.jpg"
 import SoldusPhoto from "../assets/pets/soldus/soldus-photo.jpg"
 import Sonny from "../assets/pets/sonny/sonny-1024.jpg"
+import SonnyIcon from "../assets/pets/sonny/sonny-icon.jpg"
 import SonnyPhoto from "../assets/pets/sonny/sonny-photo.jpg"
 import Tommy from "../assets/pets/tommy/tommy-1024.jpg"
+import TommyIcon from "../assets/pets/tommy/tommy-icon.jpg"
 import TommyPhoto from "../assets/pets/tommy/tommy-photo.jpg"
 import { ContentType, ExampleContent } from "../types/Example"
 
@@ -39,6 +54,7 @@ export const Examples: ExampleContent[] = [
     {
         id: 'merlin',
         header: 'Merlin',
+        icon: MerlinIcon,
         structure: [
             {
                 type: ContentType.Text,
@@ -59,6 +75,7 @@ export const Examples: ExampleContent[] = [
     {
         id: 'mollie',
         header: 'Mollie',
+        icon: MollieIcon,
         structure: [
             {
                 type: ContentType.Text,
@@ -96,6 +113,7 @@ export const Examples: ExampleContent[] = [
     {
         id: 'maud',
         header: 'Maud',
+        icon: MaudIcon,
         structure: [
             {
                 type: ContentType.Text,
@@ -135,6 +153,7 @@ export const Examples: ExampleContent[] = [
     {
         id: 'george',
         header: 'George',
+        icon: GeorgeIcon,
         structure: [
             {
                 type: ContentType.Image,
@@ -156,6 +175,7 @@ export const Examples: ExampleContent[] = [
     {
         id: 'mitzy',
         header: 'Mitzy',
+        icon: MitzyIcon,
         structure: [
             {
                 type: ContentType.Image,
@@ -172,6 +192,7 @@ export const Examples: ExampleContent[] = [
     {
         id: 'bertie',
         header: 'Bertie',
+        icon: BertieIcon,
         structure: [
             {
                 type: ContentType.Image,
@@ -188,6 +209,7 @@ export const Examples: ExampleContent[] = [
     {
         id: 'fili',
         header: 'Fili',
+        icon: FiliIcon,
         structure: [
             {
                 type: ContentType.Image,
@@ -204,6 +226,7 @@ export const Examples: ExampleContent[] = [
     {
         id: 'jazz',
         header: 'Jazz',
+        icon: JazzIcon,
         structure: [
             {
                 type: ContentType.Text,
@@ -227,6 +250,7 @@ export const Examples: ExampleContent[] = [
     {
         id: 'legend',
         header: 'Legend',
+        icon: LegendIcon,
         structure: [
             {
                 type: ContentType.Image,
@@ -243,6 +267,7 @@ export const Examples: ExampleContent[] = [
     {
         id: 'mustard',
         header: 'Mustard',
+        icon: MustardIcon,
         structure: [
             {
                 type: ContentType.Text,
@@ -265,6 +290,7 @@ export const Examples: ExampleContent[] = [
     {
         id: 'oscar',
         header: 'Oscar',
+        icon: OscarIcon,
         structure: [
             {
                 type: ContentType.Image,
@@ -281,6 +307,7 @@ export const Examples: ExampleContent[] = [
     {
         id: 'saffy',
         header: 'Saffy',
+        icon: SaffyIcon,
         structure: [
             {
                 type: ContentType.Image,
@@ -292,6 +319,7 @@ export const Examples: ExampleContent[] = [
     {
         id: 'soldus',
         header: 'Soldus',
+        icon: SoldusIcon,
         structure: [
             {
                 type: ContentType.Text,
@@ -313,6 +341,7 @@ export const Examples: ExampleContent[] = [
     {
         id: 'sonny',
         header: 'Sonny',
+        icon: SonnyIcon,
         structure: [
             {
                 type: ContentType.Image,
@@ -329,6 +358,7 @@ export const Examples: ExampleContent[] = [
     {
         id: 'tommy',
         header: 'Tommy',
+        icon: TommyIcon,
         structure: [
             {
                 type: ContentType.Text,
