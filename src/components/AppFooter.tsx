@@ -1,4 +1,4 @@
-import { Container, Divider, Grid, GridColumn, Header, Icon, Image, List, Segment } from "semantic-ui-react"
+import { Container, Divider, Grid, Header, HeaderSubheader, Icon, Image, List, Segment } from "semantic-ui-react"
 import FooterImage from '../assets/pets/oscar/oscar-icon.jpg'
 import { MediaProps, MediaType } from "../types/Media"
 import { Media } from "./Media"
@@ -7,11 +7,11 @@ const AppFooter = () => {
 
   const desktopStyle = {
     margin: '5em 0em 0em',
-    padding: '3em 0em'
+    padding: '1em 0em'
   }
 
   const mobileStyle = {
-    margin: '2em 0em 0em'
+    margin: '1em 0em 0em'
   }
 
   const FormattedFooter = ({ media }: MediaProps) => {
@@ -20,19 +20,23 @@ const AppFooter = () => {
       <>
         <Segment inverted style={isMobile ? mobileStyle : desktopStyle} vertical>
           <Container textAlign='center'>
-            <Grid verticalAlign='middle' stackable divided={isMobile ? undefined : true} inverted padded >
-              <GridColumn width={8} textAlign={isMobile ? 'center' : 'right'}>
+
+            <Grid verticalAlign='middle' inverted >
+              <Grid.Column width={8} textAlign='center'>
+                <Image circular size='tiny' src={FooterImage} floated='right' />
+              </Grid.Column>
+              <Grid.Column width={8} textAlign='left'>
                 <Header as={isMobile ? 'h3' : 'h2'} inverted>
-                  <Image circular src={FooterImage} /> Melanie Nicholas
+                  Melanie Nicholas
                 </Header>
-              </GridColumn>
-              <GridColumn width={8} textAlign={isMobile ? 'center' : 'left'}>
-                <Header as={isMobile ? 'h3' : 'h2'} inverted>
+                <HeaderSubheader>
                   Animal Portrait Artist
-                </Header>
-              </GridColumn>
+                </HeaderSubheader>
+              </Grid.Column>
             </Grid>
-            <Divider inverted section />
+
+            <Divider inverted section style={{ marginTop: '1em', marginBottom: '1em' }} />
+
             <List horizontal inverted divided link size='medium'>
               <List.Item as='a' target='_blank' rel='noopener noreferrer' href='mailto:melnicholas72%40gmail.com?Subject=Portrait%20Enquiry'>
                 <Icon name='mail' />
