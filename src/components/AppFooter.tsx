@@ -7,11 +7,16 @@ const AppFooter = () => {
 
   const desktopStyle = {
     margin: '5em 0em 0em',
-    padding: '1em 0em'
+    padding: '2em 0em'
   }
 
   const mobileStyle = {
     margin: '1em 0em 0em'
+  }
+
+  const mobileDividerStyle = {
+    marginTop: '1em',
+    marginBottom: '1em'
   }
 
   const FormattedFooter = ({ media }: MediaProps) => {
@@ -21,9 +26,9 @@ const AppFooter = () => {
         <Segment inverted style={isMobile ? mobileStyle : desktopStyle} vertical>
           <Container textAlign='center'>
 
-            <Grid verticalAlign='middle' inverted >
+            <Grid verticalAlign='middle' divided inverted >
               <Grid.Column width={8} textAlign='center'>
-                <Image circular size='tiny' src={FooterImage} floated='right' />
+                <Image circular size={isMobile ? 'tiny' : 'small'} src={FooterImage} floated='right' />
               </Grid.Column>
               <Grid.Column width={8} textAlign='left'>
                 <Header as={isMobile ? 'h3' : 'h2'} inverted>
@@ -35,7 +40,7 @@ const AppFooter = () => {
               </Grid.Column>
             </Grid>
 
-            <Divider inverted section style={{ marginTop: '1em', marginBottom: '1em' }} />
+            <Divider inverted section style={isMobile ? mobileDividerStyle : {}} />
 
             <List horizontal inverted divided link size='medium'>
               <List.Item as='a' target='_blank' rel='noopener noreferrer' href='mailto:melnicholas72%40gmail.com?Subject=Portrait%20Enquiry'>
