@@ -1,3 +1,6 @@
+import Barney from "../assets/pets/barney/barney-1024.jpg"
+import BarneyIcon from "../assets/pets/barney/barney-icon.jpg"
+import BarneyPhoto from "../assets/pets/barney/barney-photo.jpg"
 import Bertie from "../assets/pets/bertie/bertie-1024.jpg"
 import BertieIcon from "../assets/pets/bertie/bertie-icon.jpg"
 import BertiePhoto from "../assets/pets/bertie/bertie-photo.jpg"
@@ -14,6 +17,8 @@ import JazzPhoto from "../assets/pets/jazz/jazz-photo.jpg"
 import Legend from "../assets/pets/legend/legend-1024.jpg"
 import LegendIcon from "../assets/pets/legend/legend-icon.jpg"
 import LegendPhoto from "../assets/pets/legend/legend-photo.jpg"
+import Lola from "../assets/pets/lola/lola-1024.jpg"
+import LolaIcon from "../assets/pets/lola/lola-icon.jpg"
 import Maud from "../assets/pets/maud/maud-1024.jpg"
 import MaudIcon from "../assets/pets/maud/maud-icon.jpg"
 import MaudPhoto1 from "../assets/pets/maud/maud-photo-1.jpg"
@@ -22,6 +27,8 @@ import MaudPhoto3 from "../assets/pets/maud/maud-photo-3.jpg"
 import Merlin from "../assets/pets/merlin/merlin-1024.jpg"
 import MerlinIcon from "../assets/pets/merlin/merlin-icon.jpg"
 import MerlinPhoto from "../assets/pets/merlin/merlin-photo.jpg"
+import MerlinAlsatian from "../assets/pets/merlinAlsatian/merlinAlsatian-1024.jpg"
+import MerlinAlsatianIcon from "../assets/pets/merlinAlsatian/merlinAlsatian-icon.jpg"
 import Mitzy from "../assets/pets/mitzy/mitzy-1024.jpg"
 import MitzyIcon from "../assets/pets/mitzy/mitzy-icon.jpg"
 import MitzyPhoto from "../assets/pets/mitzy/mitzy-photo.jpg"
@@ -380,6 +387,47 @@ export const Examples: ExampleContent[] = [
                 type: ContentType.Image,
                 image: TommyPhoto,
                 caption: 'Tommy - Original Photo'
+            },
+        ]
+    },
+    {
+        id: 'merlinAlsatian',
+        header: 'Merlin',
+        icon: MerlinAlsatianIcon,
+        structure: [
+            {
+                type: ContentType.Image,
+                image: MerlinAlsatian,
+                caption: 'Merlin'
+            },
+        ]
+    },
+    {
+        id: 'barney',
+        header: 'Barney',
+        icon: BarneyIcon,
+        structure: [
+            {
+                type: ContentType.Image,
+                image: Barney,
+                caption: 'Barney'
+            },
+            {
+                type: ContentType.Image,
+                image: BarneyPhoto,
+                caption: 'Barney - Original Photo'
+            },
+        ]
+    },
+    {
+        id: 'lola',
+        header: 'Lola',
+        icon: LolaIcon,
+        structure: [
+            {
+                type: ContentType.Image,
+                image: Lola,
+                caption: 'Lola'
             },
         ]
     },

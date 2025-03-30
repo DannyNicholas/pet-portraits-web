@@ -1,4 +1,8 @@
 import { Photo } from 'react-photo-album';
+import Barney1024 from "../assets/pets/barney/barney-1024.jpg";
+import Barney1920 from "../assets/pets/barney/barney-1920.jpg";
+import Barney256 from "../assets/pets/barney/barney-256.jpg";
+import Barney512 from "../assets/pets/barney/barney-512.jpg";
 import Bertie1024 from "../assets/pets/bertie/bertie-1024.jpg";
 import Bertie1920 from "../assets/pets/bertie/bertie-1920.jpg";
 import Bertie256 from "../assets/pets/bertie/bertie-256.jpg";
@@ -27,6 +31,10 @@ import Merlin1024 from "../assets/pets/merlin/merlin-1024.jpg";
 import Merlin1920 from "../assets/pets/merlin/merlin-1920.jpg";
 import Merlin256 from "../assets/pets/merlin/merlin-256.jpg";
 import Merlin512 from "../assets/pets/merlin/merlin-512.jpg";
+import MerlinAlsatian1024 from "../assets/pets/merlinAlsatian/merlinAlsatian-1024.jpg";
+import MerlinAlsatian1920 from "../assets/pets/merlinAlsatian/merlinAlsatian-1920.jpg";
+import MerlinAlsatian256 from "../assets/pets/merlinAlsatian/merlinAlsatian-256.jpg";
+import MerlinAlsatian512 from "../assets/pets/merlinAlsatian/merlinAlsatian-512.jpg";
 import Mitzy1024 from "../assets/pets/mitzy/mitzy-1024.jpg";
 import Mitzy1920 from "../assets/pets/mitzy/mitzy-1920.jpg";
 import Mitzy256 from "../assets/pets/mitzy/mitzy-256.jpg";
@@ -59,6 +67,11 @@ import Tommy1024 from "../assets/pets/tommy/tommy-1024.jpg";
 import Tommy1920 from "../assets/pets/tommy/tommy-1920.jpg";
 import Tommy256 from "../assets/pets/tommy/tommy-256.jpg";
 import Tommy512 from "../assets/pets/tommy/tommy-512.jpg";
+
+import Lola1024 from "../assets/pets/lola/lola-1024.jpg";
+import Lola1920 from "../assets/pets/lola/lola-1920.jpg";
+import Lola256 from "../assets/pets/lola/lola-256.jpg";
+import Lola512 from "../assets/pets/lola/lola-512.jpg";
 
 
 // holds photos for the gallery
@@ -241,6 +254,42 @@ export const Photos: Photo[] = [
             { src: Legend512, width: 512, height: 696 },
             { src: Legend1024, width: 1024, height: 1393 },
             { src: Legend1920, width: 1920, height: 2611 },
+        ]
+    },
+    {
+        src: MerlinAlsatian1920,
+        width: 1590,
+        height: 1920,
+        title: "Merlin",
+        srcSet: [
+            { src: MerlinAlsatian256, width: 212, height: 256 },
+            { src: MerlinAlsatian512, width: 424, height: 512 },
+            { src: MerlinAlsatian1024, width: 848, height: 1024 },
+            { src: MerlinAlsatian1920, width: 1590, height: 1920 },
+        ]
+    },
+    {
+        src: Barney1920,
+        width: 1796,
+        height: 1920,
+        title: "Barney",
+        srcSet: [
+            { src: Barney256, width: 240, height: 256 },
+            { src: Barney512, width: 479, height: 512 },
+            { src: Barney1024, width: 958, height: 1024 },
+            { src: Barney1920, width: 1796, height: 1920 },
+        ]
+    },
+    {
+        src: Lola1920,
+        width: 1636,
+        height: 1920,
+        title: "Lola",
+        srcSet: [
+            { src: Lola256, width: 218, height: 256 },
+            { src: Lola512, width: 436, height: 512 },
+            { src: Lola1024, width: 872, height: 1024 },
+            { src: Lola1920, width: 1636, height: 1920 },
         ]
     },
 ];
