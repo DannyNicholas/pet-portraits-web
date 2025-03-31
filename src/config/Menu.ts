@@ -1,4 +1,4 @@
-import { ABOUT_ROUTE, CONTACT_ROUTE, EXAMPLES_SUMMARY, GALLERY_ROUTE, HOME_ROUTE, PRICES_ROUTE } from '../constants/Constants';
+import { ABOUT_ROUTE, CONTACT_ROUTE, EXAMPLES_SUMMARY, GALLERY_ROUTE, HOME_ROUTE } from '../constants/Constants';
 import { MenuOption } from "../types/Menu";
 
 export const MenuOptions: MenuOption[] = [
@@ -14,12 +14,13 @@ export const MenuOptions: MenuOption[] = [
         icon: 'picture',
         route: GALLERY_ROUTE,
     },
-    {
-        id: 'price',
-        label: 'Prices',
-        icon: 'pound',
-        route: PRICES_ROUTE,
-    },
+    // Hide "prices" from menu - route is disabled
+    // {
+    //     id: 'price',
+    //     label: 'Prices',
+    //     icon: 'pound',
+    //     route: PRICES_ROUTE,
+    // },
     {
         id: 'examples',
         label: 'Examples',
