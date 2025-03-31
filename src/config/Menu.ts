@@ -14,7 +14,7 @@ export const MenuOptions: MenuOption[] = [
         icon: 'picture',
         route: GALLERY_ROUTE,
     },
-    // Temporarily hide "prices" from menu (still accessible if you navigate to the URL directly)
+    // Hide "prices" from menu - route is disabled
     // {
     //     id: 'price',
     //     label: 'Prices',
