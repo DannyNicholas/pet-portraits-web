@@ -51,6 +51,10 @@ import Oscar1024 from "../assets/pets/oscar/oscar-1024.jpg";
 import Oscar1920 from "../assets/pets/oscar/oscar-1920.jpg";
 import Oscar256 from "../assets/pets/oscar/oscar-256.jpg";
 import Oscar512 from "../assets/pets/oscar/oscar-512.jpg";
+import Pepper1024 from "../assets/pets/pepper/pepper-1024.jpg";
+import Pepper1920 from "../assets/pets/pepper/pepper-1920.jpg";
+import Pepper256 from "../assets/pets/pepper/pepper-256.jpg";
+import Pepper512 from "../assets/pets/pepper/pepper-512.jpg";
 import Saffy1024 from "../assets/pets/saffy/saffy-1024.jpg";
 import Saffy1920 from "../assets/pets/saffy/saffy-1920.jpg";
 import Saffy256 from "../assets/pets/saffy/saffy-256.jpg";
@@ -290,6 +294,18 @@ export const Photos: Photo[] = [
             { src: Lola512, width: 436, height: 512 },
             { src: Lola1024, width: 872, height: 1024 },
             { src: Lola1920, width: 1636, height: 1920 },
+        ]
+    },
+    {
+        src: Pepper1920,
+        width: 1920,
+        height: 1440,
+        title: "Pepper",
+        srcSet: [
+            { src: Pepper256, width: 256, height: 192 },
+            { src: Pepper512, width: 512, height: 385 },
+            { src: Pepper1024, width: 1024, height: 768 },
+            { src: Pepper1920, width: 1920, height: 1440 },
         ]
     },
 ];

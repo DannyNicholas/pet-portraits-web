@@ -43,6 +43,9 @@ import MustardPhoto from "../assets/pets/mustard/mustard-photo.jpg"
 import Oscar from "../assets/pets/oscar/oscar-1024.jpg"
 import OscarIcon from "../assets/pets/oscar/oscar-icon.jpg"
 import OscarPhoto from "../assets/pets/oscar/oscar-photo.jpg"
+import Pepper from "../assets/pets/pepper/pepper-1024.jpg"
+import PepperIcon from "../assets/pets/pepper/pepper-icon.jpg"
+import PepperPhoto from "../assets/pets/pepper/pepper-photo.jpg"
 import Saffy from "../assets/pets/saffy/saffy-1024.jpg"
 import SaffyIcon from "../assets/pets/saffy/saffy-icon.jpg"
 import Soldus from "../assets/pets/soldus/soldus-1024.jpg"
@@ -428,6 +431,23 @@ export const Examples: ExampleContent[] = [
                 type: ContentType.Image,
                 image: Lola,
                 caption: 'Lola'
+            },
+        ]
+    },
+    {
+        id: 'pepper',
+        header: 'Pepper',
+        icon: PepperIcon,
+        structure: [
+            {
+                type: ContentType.Image,
+                image: Pepper,
+                caption: 'Pepper'
+            },
+            {
+                type: ContentType.Image,
+                image: PepperPhoto,
+                caption: 'Pepper - Original Photo'
             },
         ]
     },
