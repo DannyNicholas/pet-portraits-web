@@ -6,6 +6,7 @@ const AppPage = () => {
 
     const desktopStyle = {
         backgroundColor: '#fff',
+        marginTop: '1em',
         marginBottom: '3em',
         padding: '3em 1em',
     }
